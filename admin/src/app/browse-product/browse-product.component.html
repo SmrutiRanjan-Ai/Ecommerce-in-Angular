@@ -1,0 +1,27 @@
+<table class="table table-hover" *ngIf="!selectedProduct">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Order ID</th>
+      <th scope="col">Order Date</th>
+      <th scope="col">Order A
+        mount</th>
+      <th class="text-center" scope="col ">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products;let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{product.ProductId}}</td>
+      <td>{{product.ProductName}}</td>
+      <td><span [ngClass]="{'text-decoration-line-through':product.ProductPrice>product.ProductFeaturedPrice}"> {{product.ProductPrice | currency:"INR":"symbol"}}</span>
+        <span *ngIf="product.ProductFeaturedPrice<product.ProductPrice">{{ product.ProductFeaturedPrice | currency:"INR":"symbol"}}</span></td>
+      <td class="text-center">
+
+        <button type="button" class="btn btn-primary" (click)="editProduct(product)">Edit</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<app-edit-product *ngIf="selectedProduct" [order]="selectedProduct"></app-edit-product>
+

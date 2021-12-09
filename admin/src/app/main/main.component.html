@@ -1,0 +1,15 @@
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-orders-tab" data-bs-toggle="tab" data-bs-target="#nav-orders" type="button" role="tab" aria-controls="nav-orders" aria-selected="true">Orders</button>
+    <button class="nav-link" id="nav-products-tab" data-bs-toggle="tab" data-bs-target="#nav-products" type="button" role="tab" aria-controls="nav-products" aria-selected="false">Products</button>
+    <button class="nav-link" id="nav-addproduct-tab" data-bs-toggle="tab" data-bs-target="#nav-addproduct" type="button" role="tab" aria-controls="nav-addproduct" aria-selected="false">Add Product</button>
+    <button class="nav-link" id="nav-pos-tab" data-bs-toggle="tab" data-bs-target="#nav-category" type="button" role="tab" aria-controls="nav-pos" aria-selected="false">Create Category</button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-orders" role="tabpanel" aria-labelledby="nav-orders-tab"><app-orders></app-orders></div>
+  <div class="tab-pane fade" id="nav-products" role="tabpanel" aria-labelledby="nav-products-tab"><app-browse-product></app-browse-product></div>
+  <div class="tab-pane fade" id="nav-addproduct" role="tabpanel" aria-labelledby="nav-addproduct-tab">.<app-add-product></app-add-product></div>
+  <div class="tab-pane fade" id="nav-category" role="tabpanel" aria-labelledby="nav-category-tab"><app-category></app-category></div>
+
+</div>

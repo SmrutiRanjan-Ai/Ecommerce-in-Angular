@@ -1,0 +1,61 @@
+
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <form [formGroup]="productForm" (ngSubmit)="saveForm()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input name="name" id="name" type="text" class="form-control" formControlName="ProductName">
+        </div>
+        <div class="form-group">
+          <label for="ProductSlug">Product SKU</label>
+          <input name="ProductSlug" id="ProductSlug" type="text" class="form-control" formControlName="ProductSlug">
+        </div>
+        <div class="form-group">
+          <label for="ProductPrice">Product Price</label>
+          <input name="ProductPrice" id="ProductPrice" type="text" class="form-control" formControlName="ProductPrice">
+        </div>
+        <div class="form-group">
+          <label for="ProductFeaturedPrice">Featured Price</label>
+          <input name="ProductFeaturedPrice" id="ProductFeaturedPrice" type="text" class="form-control" formControlName="ProductFeaturedPrice">
+        </div>
+        <div class="form-group">
+          <label for="ProductImageUrl">ProductImageUrl</label>
+          <input name="ProductImageUrl" id="ProductImageUrl" type="text" class="form-control" formControlName="ProductImageUrl">
+        </div>
+        <div class="form-group">
+          <label for="ProductInventory">ProductInventory</label>
+          <input name="ProductInventory" id="ProductInventory" type="text" class="form-control" formControlName="ProductInventory">
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value={{val}} id="ProductIsCustomizable" formControlName="ProductIsCustomizable">
+            <label class="form-check-label" for="flexCheckDefault">
+              ProductIsCustomizable
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ProductTaxCode">Tax</label>
+          <select class="form-select" aria-label="Default select example" formControlName="ProductTaxCode">
+            <option selected>Select Tax</option>
+            <option *ngFor="let tax of taxlist" value={{tax.TaxId}}>{{tax.TaxSlug}}</option>
+          </select>
+          </div>
+          <div class="form-group">
+            <label for="ProductCategories">Categories</label>
+            <select class="form-select" aria-label="Default select example" formControlName="ProductCategories">
+              <option selected>Select Categories</option>
+              <option *ngFor="let c of categorylist" value={{c.CategorySlug}}>{{c.CategorySlug}}</option>
+            </select>
+            </div>
+
+
+
+
+        <button class="btn btn-primary mt-3 me-2" type="submit">Save</button>
+        <button  type="button"  class="btn btn-danger mt-3 me-2">Cancel</button>
+      </form>
+  </div>
+
+</div>

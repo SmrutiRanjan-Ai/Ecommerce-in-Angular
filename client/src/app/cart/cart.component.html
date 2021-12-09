@@ -1,0 +1,37 @@
+<div class="container my-4 mx-5">
+  <h3 class="my-2">Items In Your Cart </h3>
+<div class="accordion mb-4" id="accordionExample" >
+  <div class="accordion-item" *ngFor="let product of products">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#Collapse' + product.productlist.ProductId" aria-expanded="true" aria-controls="collapseOne">
+        {{product.productlist.ProductName}}
+      </button>
+    </h2>
+    <div [attr.id]="'Collapse'+product.productlist.ProductId" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <form class="row g-3">
+        <div class="col-auto">
+        Total Qty Ordered:
+      </div>
+      <div class="col-auto">
+          <button (click)="minusQty(product.productlist.ProductId);product.num=product.num-1;" class="btn btn-danger mx-2">-</button>
+        </div>
+        <div class="col-auto">
+          <input [(ngModel)]="product.num" type="text" name="Quantity" class="form-control"></div>
+          <div class="col-auto">
+          <button (click)="addQty(product.productlist.ProductId);product.num=product.num+1;" class="btn btn-primary mx-2" >+</button>
+        </div><div class="col-auto">Rs.{{product.productlist.ProductPrice}}</div>
+        </form>
+
+
+        </div>
+    </div>
+  </div>
+  <h4><p [(ngModel)]="ordertotal" *ngIf="ordertotal"> Order Total: {{ordertotal}}</p></h4>
+  <div class="my-4"><a routerLink="/orderlogin/" ><button type="button" class="btn btn-primary">Next</button></a></div>
+
+
+
+
+</div>
+</div>

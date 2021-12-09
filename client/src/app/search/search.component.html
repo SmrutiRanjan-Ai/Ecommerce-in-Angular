@@ -1,0 +1,27 @@
+
+<div class="container my-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Search</a></li>
+    </ol>
+  </nav>
+
+<div class="card mt-4 col-sm-11 mx-auto">
+  <h5 class="card-header text-center">Searched Products for {{term}}</h5>
+  <div class="card-body">
+    <div class="row">
+      <app-card class="col-sm-3 mb-2" *ngFor="let i of products.reverse().slice(0, 12); let j=index" [title]="i.ProductName"
+      [imageUrl]="i.ProductImageUrl"
+      [price]="i.ProductPrice"
+      [featuredPrice]="i.ProductFeaturedPrice"
+      [description]="i.ProductDescription"
+      [id]="i.ProductId"
+      [ProductImageUrl]="i.ProductImageUrl"
+      >
+
+      </app-card>
+    </div>
+  </div>
+</div>
+

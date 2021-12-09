@@ -1,0 +1,24 @@
+
+
+<div class="card mt-4 col-sm-11 mx-auto">
+  <h5 class="card-header text-center">{{slug}}</h5>
+  <div class="card-body">
+    <div class="row">
+  <ng-container *ngFor="let i of products;" >
+    <app-card class="col-sm-3 mb-2" *ngIf="i.ProductCategories == slug" [title]="i.ProductName"
+  [imageUrl]="i.ProductImageUrl"
+  [price]="i.ProductPrice"
+  [featuredPrice]="i.ProductFeaturedPrice"
+  [description]="i.ProductDescription"
+  [id]="i.ProductId"
+  [ProductImageUrl]="i.ProductImageUrl"
+  >
+  {{i.ProductCategories}}
+  </app-card>
+
+ </ng-container>
+
+</div>
+</div>
+</div>
+

@@ -1,0 +1,31 @@
+<div class="container my-4">
+  <h1>Order</h1>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active"  [ngClass]="{ 'active':act==''}" (click)="act=''" id="Cart-tab" data-bs-toggle="tab" data-bs-target="#Cart" type="button" role="tab" aria-controls="Cart" aria-selected="true">Cart</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" [ngClass]="{ 'active':act=='account'}" (click)="act='account'" id="Account-tab" data-bs-toggle="tab" data-bs-target="#Account" type="button" role="tab" aria-controls="Account" aria-selected="false">Account</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" [ngClass]="{ 'active':act=='shipping'}" (click)="act='shipping'" id="Shipping-tab" data-bs-toggle="tab" data-bs-target="#Shipping" type="button" role="tab" aria-controls="Shipping" aria-selected="false">Shipping</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" [ngClass]="{ 'active':act=='payment'}" (click)="act='payment'" id="Payment-tab" data-bs-toggle="tab" data-bs-target="#Payment" type="button" role="tab" aria-controls="Payment" aria-selected="false">Payment</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active " [ngClass]="{ 'active':act==''}" id="Cart" role="tabpanel" aria-labelledby="Cart-tab"><app-cart></app-cart>
+      <button type="button" (click)="act='account'"  class="btn btn-primary mt-2" >Next</button>
+    </div>
+    <div class="tab-pane fade" [ngClass]="{ 'show active': act=='account' }" id="Account" role="tabpanel" aria-labelledby="Account-tab">
+      <app-orderlogin></app-orderlogin>
+      <button type="button" (click)="act='shipping'"  class="btn btn-primary mt-2" >Next</button>
+    </div>
+    <div class="tab-pane fade" [ngClass]="{'show active':act=='shipping'}" id="Shipping" role="tabpanel" aria-labelledby="Shipping-tab">
+      <app-shipping></app-shipping><button type="button" (click)="act='payment'"  class="btn btn-primary mt-2" >Next</button>
+    </div>
+    <div class="tab-pane fade" [ngClass]="{ 'show active':act=='payment'}" id="Payment" role="tabpanel" aria-labelledby="Payment-tab">
+      <button type="button" (click)="placeOrder()"  class="btn btn-primary mt-2" >Next</button>Place Order</div>
+  </div>
+</div>

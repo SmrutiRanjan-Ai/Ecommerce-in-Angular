@@ -1,0 +1,32 @@
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <form [formGroup]="categoryForm" (ngSubmit)="saveForm()">
+        <div class="form-group">
+          <label for="CategorySlug">Category Slug</label>
+          <input name="CategorySlug" id="CategorySlug" type="text" class="form-control" formControlName="CategorySlug">
+        </div>
+        <div class="form-group">
+          <label for="ProductSlug">Category Description</label>
+          <input name="ProductSlug" id="ProductSlug" type="text" class="form-control" formControlName="CategoryDescription">
+        </div>
+        <div class="form-group">
+            <label for="CategoryImageUrl">Upload Image Url</label>
+            <input type="text" class="form-control" id="CategoryImageUrl" formControlName="CategoryImageUrl">
+          </div>
+
+        <div class="form-group">
+          <label for="CategoryParent">Parent Category</label>
+          <select class="form-select" aria-label="Default select example" formControlName="CategoryParent">
+            <option selected>Select Parent Category</option>
+            <option *ngFor="let c of categorylist">{{c.CategorySlug}}</option>
+
+          </select>
+
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button>
+        <button  type="button"  class="btn btn-danger">Cancel</button>
+      </form>
+  </div>
+
+</div>

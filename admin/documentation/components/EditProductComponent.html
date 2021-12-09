@@ -1,0 +1,864 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>admin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">admin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  EditProductComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/edit-product/edit-product.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-edit-product</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./edit-product.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./edit-product.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#id" >id</a>
+                            </li>
+                            <li>
+                                <a href="#productForm" >productForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#returnProducts" >returnProducts</a>
+                            </li>
+                            <li>
+                                <a href="#saveForm" >saveForm</a>
+                            </li>
+                            <li>
+                                <a href="#updateProduct" >updateProduct</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#order" >order</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#order" >order</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(apiService: <a href="../injectables/ApiService.html" target="_self">ApiService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/edit-product/edit-product.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>apiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApiService.html" target="_self" >ApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="order"></a>
+                        <b>order</b>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/edit-product/edit-product.component.ts:19</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/edit-product/edit-product.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="returnProducts"></a>
+                    <span class="name">
+                        <span ><b>returnProducts</b></span>
+                        <a href="#returnProducts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>returnProducts()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/edit-product/edit-product.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveForm"></a>
+                    <span class="name">
+                        <span ><b>saveForm</b></span>
+                        <a href="#saveForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/edit-product/edit-product.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateProduct"></a>
+                    <span class="name">
+                        <span ><b>updateProduct</b></span>
+                        <a href="#updateProduct"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateProduct()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/edit-product/edit-product.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="id"></a>
+                    <span class="name">
+                        <span ><b>id</b></span>
+                        <a href="#id"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/edit-product/edit-product.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="productForm"></a>
+                    <span class="name">
+                        <span ><b>productForm</b></span>
+                        <a href="#productForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/edit-product/edit-product.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="order"></a>
+                        <span class="name"><b>order</b><a href="#order"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>order(val: <a href="../interfaces/Product.html" target="_self">Product</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/edit-product/edit-product.component.ts:19</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>val</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="../interfaces/Product.html" target="_self" >Product</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Product } from &#x27;./../core&#x27;;
+import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
+import { FormControl, FormGroup } from &#x27;@angular/forms&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { ApiService } from &#x27;../api.service&#x27;;
+
+@Component({
+  selector: &#x27;app-edit-product&#x27;,
+  templateUrl: &#x27;./edit-product.component.html&#x27;,
+  styleUrls: [&#x27;./edit-product.component.css&#x27;]
+})
+/** Edit Product Page */
+export class EditProductComponent implements OnInit {
+  id : any;
+  productForm: any;
+
+  constructor(private apiService: ApiService,private router: Router) { }
+
+  @Input() set order(val: Product) {
+    this.id&#x3D;val.ProductId;
+    this.productForm &#x3D; new FormGroup({
+      ProductId: new FormControl(val.ProductId),
+      ProductName: new FormControl(val.ProductName),
+      ProductSlug: new FormControl(val.ProductSlug),
+      ProductDescription: new FormControl(val.ProductDescription),
+      ProductImageUrl: new FormControl(val.ProductImageUrl),
+      ProductIsCustomizable: new FormControl(val.ProductIsCustomizable),
+      ProductPrice: new FormControl(val.ProductPrice),
+      ProductLaunchDate: new FormControl(val.ProductLaunchDate),
+      ProductInventory: new FormControl(val.ProductInventory),
+      ProductInventoryUnit: new FormControl(val.ProductInventoryUnit),
+      ProductFeaturedPrice: new FormControl(val.ProductFeaturedPrice),
+      ProductDiscountpercentage: new FormControl(val.ProductDiscountpercentage),
+      ProductShippingRate: new FormControl(val.ProductShippingRate),
+      ProductFlatShipping: new FormControl(val.ProductFlatShipping),
+      ProductTaxCode: new FormControl(val.ProductCreater),
+      ProductCategories: new FormControl(val.ProductCategories),
+      ProductTags: new FormControl(val.ProductTags),
+    })
+
+  };
+
+  ngOnInit(): void {
+  }
+  saveForm() {
+    this.updateProduct();}
+
+    updateProduct(){
+      this.apiService.updateProduct(this.id,this.productForm.value).subscribe(
+        (data: any) &#x3D;&gt; {
+          this.order &#x3D; data;
+        },
+        error &#x3D;&gt; console.log(error)
+      );
+      this.router.navigate([&#x27;&#x27;]);
+    }
+    returnProducts(){
+      this.router.navigate([&#x27;&#x27;]);
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;br&gt;
+&lt;form [formGroup]&#x3D;&quot;productForm&quot; (ngSubmit)&#x3D;&quot;saveForm()&quot;&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductId&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductId&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductId&quot; id&#x3D;&quot;ProductId&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot; formControlName&#x3D;&quot;ProductId&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductName&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductName&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductName&quot; id&#x3D;&quot;ProductName&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot; formControlName&#x3D;&quot;ProductName&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductSlug&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductSlug&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductSlug&quot; id&#x3D;&quot;ProductSlug&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot; formControlName&#x3D;&quot;ProductSlug&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductDescription&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductDescription&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductDescription&quot; id&#x3D;&quot;ProductDescription&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductDescription&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductFeaturedImageFile&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductImageUrl&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductFeaturedImageFile&quot; id&#x3D;&quot;ProductFeaturedImageFile&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductImageUrl&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductIsCustomizable&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductIsCustomizable&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductIsCustomizable&quot; id&#x3D;&quot;ProductIsCustomizable&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductIsCustomizable&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductPrice&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductPrice&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductPrice&quot; id&#x3D;&quot;ProductPrice&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot; formControlName&#x3D;&quot;ProductPrice&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductLaunchDate&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductLaunchDate&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductLaunchDate&quot; id&#x3D;&quot;ProductLaunchDate&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductLaunchDate&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductInventory&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductInventory&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductInventory&quot; id&#x3D;&quot;ProductInventory&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductInventory&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductInventoryUnit&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductInventoryUnit&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductInventoryUnit&quot; id&#x3D;&quot;ProductInventoryUnit&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductInventoryUnit&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductFeaturedPrice&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductFeaturedPrice&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductFeaturedPrice&quot; id&#x3D;&quot;ProductFeaturedPrice&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductFeaturedPrice&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductDiscountpercentage&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductDiscountpercentage&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductDiscountpercentage&quot; id&#x3D;&quot;ProductDiscountpercentage&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductDiscountpercentage&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductShippingRate&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductShippingRate&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductShippingRate&quot; id&#x3D;&quot;ProductShippingRate&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductShippingRate&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductFlatShipping&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductFlatShipping&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductFlatShipping&quot; id&#x3D;&quot;ProductFlatShipping&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductFlatShipping&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductTaxCode&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductTaxCode&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductTaxCode&quot; id&#x3D;&quot;ProductTaxCode&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductTaxCode&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductCategories&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductCategories&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductCategories&quot; id&#x3D;&quot;ProductCategories&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot;
+        formControlName&#x3D;&quot;ProductCategories&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;label for&#x3D;&quot;ProductTags&quot; class&#x3D;&quot;col-auto col-form-label&quot;&gt;ProductTags&lt;/label&gt;
+    &lt;div class&#x3D;&quot;col&quot;&gt;
+      &lt;input name&#x3D;&quot;ProductTags&quot; id&#x3D;&quot;ProductTags&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control mb-3&quot; formControlName&#x3D;&quot;ProductTags&quot;&gt;
+    &lt;/div&gt;
+
+
+
+  &lt;/div&gt;
+
+
+
+  &lt;div class&#x3D;&quot;mb-3 row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-6&quot;&gt;
+      &lt;span class&#x3D;&quot;me-5&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; (click)&#x3D;&quot;saveForm()&quot;&gt;Save&lt;/button&gt;&lt;/span&gt;
+
+
+
+      &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; (click)&#x3D;&quot;returnProducts()&quot;&gt;Return&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+
+
+
+
+
+&lt;/form&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./edit-product.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><br><form [formGroup]="productForm" (ngSubmit)="saveForm()">  <div class="mb-3 row">    <label for="ProductId" class="col-auto col-form-label">ProductId</label>    <div class="col">      <input name="ProductId" id="ProductId" type="text" class="form-control mb-3" formControlName="ProductId"></div>  </div>  <div class="mb-3 row">    <label for="ProductName" class="col-auto col-form-label">ProductName</label>    <div class="col">      <input name="ProductName" id="ProductName" type="text" class="form-control mb-3" formControlName="ProductName">    </div>  </div>  <div class="mb-3 row">    <label for="ProductSlug" class="col-auto col-form-label">ProductSlug</label>    <div class="col">      <input name="ProductSlug" id="ProductSlug" type="text" class="form-control mb-3" formControlName="ProductSlug">    </div>  </div>  <div class="mb-3 row">    <label for="ProductDescription" class="col-auto col-form-label">ProductDescription</label>    <div class="col">      <input name="ProductDescription" id="ProductDescription" type="text" class="form-control mb-3"        formControlName="ProductDescription"></div>  </div>  <div class="mb-3 row">    <label for="ProductFeaturedImageFile" class="col-auto col-form-label">ProductImageUrl</label>    <div class="col">      <input name="ProductFeaturedImageFile" id="ProductFeaturedImageFile" type="text" class="form-control mb-3"        formControlName="ProductImageUrl"></div>  </div>  <div class="mb-3 row">    <label for="ProductIsCustomizable" class="col-auto col-form-label">ProductIsCustomizable</label>    <div class="col">      <input name="ProductIsCustomizable" id="ProductIsCustomizable" type="text" class="form-control mb-3"        formControlName="ProductIsCustomizable"></div>  </div>  <div class="mb-3 row">    <label for="ProductPrice" class="col-auto col-form-label">ProductPrice</label>    <div class="col">      <input name="ProductPrice" id="ProductPrice" type="text" class="form-control mb-3" formControlName="ProductPrice">    </div>  </div>  <div class="mb-3 row">    <label for="ProductLaunchDate" class="col-auto col-form-label">ProductLaunchDate</label>    <div class="col">      <input name="ProductLaunchDate" id="ProductLaunchDate" type="text" class="form-control mb-3"        formControlName="ProductLaunchDate"></div>  </div>  <div class="mb-3 row">    <label for="ProductInventory" class="col-auto col-form-label">ProductInventory</label>    <div class="col">      <input name="ProductInventory" id="ProductInventory" type="text" class="form-control mb-3"        formControlName="ProductInventory"></div>  </div>  <div class="mb-3 row">    <label for="ProductInventoryUnit" class="col-auto col-form-label">ProductInventoryUnit</label>    <div class="col">      <input name="ProductInventoryUnit" id="ProductInventoryUnit" type="text" class="form-control mb-3"        formControlName="ProductInventoryUnit"></div>  </div>  <div class="mb-3 row">    <label for="ProductFeaturedPrice" class="col-auto col-form-label">ProductFeaturedPrice</label>    <div class="col">      <input name="ProductFeaturedPrice" id="ProductFeaturedPrice" type="text" class="form-control mb-3"        formControlName="ProductFeaturedPrice"></div>  </div>  <div class="mb-3 row">    <label for="ProductDiscountpercentage" class="col-auto col-form-label">ProductDiscountpercentage</label>    <div class="col">      <input name="ProductDiscountpercentage" id="ProductDiscountpercentage" type="text" class="form-control mb-3"        formControlName="ProductDiscountpercentage"></div>  </div>  <div class="mb-3 row">    <label for="ProductShippingRate" class="col-auto col-form-label">ProductShippingRate</label>    <div class="col">      <input name="ProductShippingRate" id="ProductShippingRate" type="text" class="form-control mb-3"        formControlName="ProductShippingRate"></div>  </div>  <div class="mb-3 row">    <label for="ProductFlatShipping" class="col-auto col-form-label">ProductFlatShipping</label>    <div class="col">      <input name="ProductFlatShipping" id="ProductFlatShipping" type="text" class="form-control mb-3"        formControlName="ProductFlatShipping"></div>  </div>  <div class="mb-3 row">    <label for="ProductTaxCode" class="col-auto col-form-label">ProductTaxCode</label>    <div class="col">      <input name="ProductTaxCode" id="ProductTaxCode" type="text" class="form-control mb-3"        formControlName="ProductTaxCode"></div>  </div>  <div class="mb-3 row">    <label for="ProductCategories" class="col-auto col-form-label">ProductCategories</label>    <div class="col">      <input name="ProductCategories" id="ProductCategories" type="text" class="form-control mb-3"        formControlName="ProductCategories"></div>  </div>  <div class="mb-3 row">    <label for="ProductTags" class="col-auto col-form-label">ProductTags</label>    <div class="col">      <input name="ProductTags" id="ProductTags" type="text" class="form-control mb-3" formControlName="ProductTags">    </div>  </div>  <div class="mb-3 row">    <div class="col-6">      <span class="me-5">        <button type="button" class="btn btn-primary" (click)="saveForm()">Save</button></span>      <button type="button" class="btn btn-secondary" (click)="returnProducts()">Return</button></div>  </div></form></div>'
+    var COMPONENTS = [{'name': 'AddProductComponent', 'selector': 'app-add-product'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'BrowseProductComponent', 'selector': 'app-browse-product'},{'name': 'CategoryComponent', 'selector': 'app-category'},{'name': 'EditProductComponent', 'selector': 'app-edit-product'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'OrderComponent', 'selector': 'app-order'},{'name': 'OrdersComponent', 'selector': 'app-orders'},{'name': 'PosComponent', 'selector': 'app-pos'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'EditProductComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EditProductComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

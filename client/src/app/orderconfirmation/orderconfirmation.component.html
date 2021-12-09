@@ -1,0 +1,22 @@
+<div class="container mt-5" *ngIf="order">
+<div class="card" *ngIf="orderStatus">
+  <div class="card-header">
+    Order Confirmation
+  </div>
+  <div class="card-body" >
+    <h5 class="card-title">Thank You For Placing Order</h5>
+    <p class="card-text"> It will reach you within 3-7 days.</p>
+
+  </div>
+</div>
+<div class="card" *ngIf="!orderStatus">
+  <div class="card-header">
+    Order Status
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{status}}</h5>
+
+
+  </div>
+</div>
+</div>

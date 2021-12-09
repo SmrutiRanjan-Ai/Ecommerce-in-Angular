@@ -1,0 +1,126 @@
+<br>
+<form [formGroup]="productForm" (ngSubmit)="saveForm()">
+  <div class="mb-3 row">
+    <label for="ProductId" class="col-auto col-form-label">ProductId</label>
+    <div class="col">
+      <input name="ProductId" id="ProductId" type="text" class="form-control mb-3" formControlName="ProductId"></div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="ProductName" class="col-auto col-form-label">ProductName</label>
+    <div class="col">
+      <input name="ProductName" id="ProductName" type="text" class="form-control mb-3" formControlName="ProductName">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductSlug" class="col-auto col-form-label">ProductSlug</label>
+    <div class="col">
+      <input name="ProductSlug" id="ProductSlug" type="text" class="form-control mb-3" formControlName="ProductSlug">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductDescription" class="col-auto col-form-label">ProductDescription</label>
+    <div class="col">
+      <input name="ProductDescription" id="ProductDescription" type="text" class="form-control mb-3"
+        formControlName="ProductDescription"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductFeaturedImageFile" class="col-auto col-form-label">ProductImageUrl</label>
+    <div class="col">
+      <input name="ProductFeaturedImageFile" id="ProductFeaturedImageFile" type="text" class="form-control mb-3"
+        formControlName="ProductImageUrl"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductIsCustomizable" class="col-auto col-form-label">ProductIsCustomizable</label>
+    <div class="col">
+      <input name="ProductIsCustomizable" id="ProductIsCustomizable" type="text" class="form-control mb-3"
+        formControlName="ProductIsCustomizable"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductPrice" class="col-auto col-form-label">ProductPrice</label>
+    <div class="col">
+      <input name="ProductPrice" id="ProductPrice" type="text" class="form-control mb-3" formControlName="ProductPrice">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductLaunchDate" class="col-auto col-form-label">ProductLaunchDate</label>
+    <div class="col">
+      <input name="ProductLaunchDate" id="ProductLaunchDate" type="text" class="form-control mb-3"
+        formControlName="ProductLaunchDate"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductInventory" class="col-auto col-form-label">ProductInventory</label>
+    <div class="col">
+      <input name="ProductInventory" id="ProductInventory" type="text" class="form-control mb-3"
+        formControlName="ProductInventory"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductInventoryUnit" class="col-auto col-form-label">ProductInventoryUnit</label>
+    <div class="col">
+      <input name="ProductInventoryUnit" id="ProductInventoryUnit" type="text" class="form-control mb-3"
+        formControlName="ProductInventoryUnit"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductFeaturedPrice" class="col-auto col-form-label">ProductFeaturedPrice</label>
+    <div class="col">
+      <input name="ProductFeaturedPrice" id="ProductFeaturedPrice" type="text" class="form-control mb-3"
+        formControlName="ProductFeaturedPrice"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductDiscountpercentage" class="col-auto col-form-label">ProductDiscountpercentage</label>
+    <div class="col">
+      <input name="ProductDiscountpercentage" id="ProductDiscountpercentage" type="text" class="form-control mb-3"
+        formControlName="ProductDiscountpercentage"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductShippingRate" class="col-auto col-form-label">ProductShippingRate</label>
+    <div class="col">
+      <input name="ProductShippingRate" id="ProductShippingRate" type="text" class="form-control mb-3"
+        formControlName="ProductShippingRate"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductFlatShipping" class="col-auto col-form-label">ProductFlatShipping</label>
+    <div class="col">
+      <input name="ProductFlatShipping" id="ProductFlatShipping" type="text" class="form-control mb-3"
+        formControlName="ProductFlatShipping"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductTaxCode" class="col-auto col-form-label">ProductTaxCode</label>
+    <div class="col">
+      <input name="ProductTaxCode" id="ProductTaxCode" type="text" class="form-control mb-3"
+        formControlName="ProductTaxCode"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductCategories" class="col-auto col-form-label">ProductCategories</label>
+    <div class="col">
+      <input name="ProductCategories" id="ProductCategories" type="text" class="form-control mb-3"
+        formControlName="ProductCategories"></div>
+  </div>
+  <div class="mb-3 row">
+    <label for="ProductTags" class="col-auto col-form-label">ProductTags</label>
+    <div class="col">
+      <input name="ProductTags" id="ProductTags" type="text" class="form-control mb-3" formControlName="ProductTags">
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="mb-3 row">
+    <div class="col-6">
+      <span class="me-5">
+        <button type="button" class="btn btn-primary" (click)="saveForm()">Save</button></span>
+
+
+
+      <button type="button" class="btn btn-secondary" (click)="returnProducts()">Return</button></div>
+  </div>
+
+
+
+
+
+
+</form>

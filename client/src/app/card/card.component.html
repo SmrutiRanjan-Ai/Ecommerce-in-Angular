@@ -1,0 +1,10 @@
+<a routerLink="/products/{{id}}"><div class="card h-100 " >
+ <img [src]="baseurl+ProductImageUrl" class="img-thumbnail mx-2 my-2 " alt="ok" style="width:auto;height: 300px;object-fit: contain;">
+  <div class="card-body">
+    <h5 class="card-title crop-text-2 ">{{title}}</h5>
+    <p class="card-text crop-text-2 text-truncate" >{{description}}</p>
+    <a  routerLink="/products/{{id}}" class="btn btn-primary">Buy Now</a> <span class="card-text mx-3 text-decoration-line-through" *ngIf="featuredPrice>0 && price>featuredPrice">Rs.{{price}}</span>
+    <span class="card-text mx-3" *ngIf="featuredPrice==0">Rs.{{price}}</span>
+    <span class="card-text mx-3" *ngIf="featuredPrice>0">Rs.{{featuredPrice}}</span>
+  </div>
+</div></a>

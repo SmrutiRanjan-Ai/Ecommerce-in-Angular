@@ -1,0 +1,30 @@
+<form [formGroup]="authForm" (ngSubmit)="saveForm()" *ngIf="auth=='register'">
+  <label>Username</label><br>
+  <input type="text" formControlName="username"/><br>
+  <label>First Name</label><br>
+  <input type="text" formControlName="first_name"/><br>
+  <label>Last Name</label><br>
+  <input type="text" formControlName="last_name"/><br>
+  <label>Email</label><br>
+  <input type="email" formControlName="email"/><br>
+
+  <label>Password</label><br>
+  <input type="password" formControlName="password" /><br>
+  <label>Retype Password</label><br>
+  <input type="password" formControlName="password2" /><br>
+  <button type="submit">
+    <span>Register</span>
+  </button>
+</form>
+<form [formGroup]="authForm" (ngSubmit)="saveForm()" *ngIf="auth=='login'">
+  <label>Username</label><br>
+  <input type="text" formControlName="username"/><br>
+  <label>Email</label><br>
+  <input type="password" formControlName="password" /><br>
+  <button class="btn btn-primary" type="submit">
+    <span>Login</span>
+  </button>
+</form>
+<br>
+
+

@@ -1,0 +1,6 @@
+
+<div class="container mx-5 my-5" *ngIf="orders">
+  <ul>
+    <li *ngFor="let i of orders">OrderID - {{i.OrderId}}  Order Total - {{i.OrderTotal}} Status - {{i.OrderStatus}} Tracking - {{i.OrderTrackingId}}</li>
+  </ul>
+</div>

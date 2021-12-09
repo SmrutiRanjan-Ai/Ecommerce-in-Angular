@@ -1,0 +1,67 @@
+
+<br>
+<form [formGroup]="orderForm" (ngSubmit)="saveForm()">
+<div class="mb-3 row">
+
+  <label for="OrderId" class="col-auto col-form-label">Order ID</label>
+  <div class="col">
+      <input name="OrderId" id="OrderId" type="text" class="form-control mb-3" formControlName="OrderId" readonly>
+    </div>
+    <div class="mb-3 row">
+    <label for="OrderShippingRate" class="col-auto col-form-label">Shipping Rate</label>
+  <div class="col">
+          <input name="OrderShippingRate" id="OrderShippingRate" type="text" class="form-control mb-3" formControlName="OrderShippingRate" readonly>
+        </div></div>
+        <div class="mb-3 row">
+          <label for="OrderShippingRate" class="col-auto col-form-label">Order Date</label>
+        <div class="col">
+        <input name="OrderDateTime" id="OrderDateTime" type="text" class="form-control mb-3" formControlName="OrderDateTime"readonly></div>
+      </div></div>
+
+      <div class="mb-3 row">
+        <label for="OrderShippingRate" class="col-auto col-form-label">Order Total</label>
+      <div class="col">
+         <input name="OrderTotal" id="OrderTotal" type="text" class="form-control mb-3" formControlName="OrderTotal"readonly>
+        </div></div>
+        <div class="mb-3 row">
+          <label for="OrderShippingRate" class="col-auto col-form-label">Customer ID</label>
+        <div class="col">
+          <input name="OrderCustomerId" id="OrderCustomerId" type="text" class="form-control mb-3" formControlName="OrderCustomerId"readonly>
+        </div></div>
+        <div class="mb-3 row">
+          <label for="OrderShippingRate" class="col-auto col-form-label">Shipping Address</label>
+        <div class="col">
+          <input name="OrderShippingAddress" id="OrderShippingAddress" type="text" class="form-control mb-3" formControlName="OrderShippingAddress"readonly>
+        </div></div>
+        <div class="mb-3 row">
+          <label for="OrderShippingRate" class="col-auto col-form-label">Tracking ID</label>
+        <div class="col">
+          <input name="OrderTrackingId" id="OrderTrackingId" type="text" class="form-control mb-3" formControlName="OrderTrackingId">
+        </div></div>
+        <div class="mb-3 row">
+        <label for="OrderShippingRate" class="col-auto col-form-label">Order Status</label>
+        <div class="col">
+        <select class="form-select" id="OrderStatus" aria-label="Default select example" formControlName="OrderStatus">
+          <option selected>Open this select menu</option>
+          <option value="SHIPPED">SHIPPED</option>
+          <option value="PROCESSING">PROCESSING</option>
+          <option value="CONFIRMED">CONFIRMED</option>
+          <option value="CANCELLED">CANCELLED</option>
+          <option value="PENDING">PENDING</option>
+        </select></div></div>
+
+        <div class="mb-3 row">
+        <div class="col-6">
+          <span class="me-5">
+          <button type="button" class="btn btn-primary" (click)="saveForm()">Save</button></span>
+
+
+
+          <button type="button" class="btn btn-secondary" (click)="returnOrders()">Return</button></div></div>
+
+
+
+
+
+
+</form>
